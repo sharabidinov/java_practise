@@ -1,18 +1,20 @@
-package data_sturctures;
+package data_sturctures.arrays;
 
 import java.util.Scanner;
 
-public class FibonacciSequence {
+
+
+public class XDProgression {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt();
+        int d = sc.nextInt();
         int n = sc.nextInt();
         int[] array = new int[n];
-        array[0] = 1;
-        array[1] = 1;
-        sc.close();
 
-        for (int i = 2; i < array.length; i++) {
-            array[i] = array[i -1] + array[i-2];
+        for (int i = array.length - 1; i >= 0; i--) {
+            array[i] = x;
+            x += d;
         }
         for (int item : array) {
             System.out.print(item + " ");

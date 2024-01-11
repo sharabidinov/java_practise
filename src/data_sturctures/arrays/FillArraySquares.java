@@ -1,18 +1,18 @@
-package data_sturctures;
+package data_sturctures.arrays;
 
 import java.util.Scanner;
 
-public class FillArray {
+public class FillArraySquares {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int[] array = new int[n];
+        int[] arraySquares = new int[n];
         int counter = 1;
         while (counter <= n) {
-            array[counter-1] = counter;
+            arraySquares[counter-1] = counter * counter;
             counter++;
         }
-        for (int item: array) {
+        for (int item: arraySquares) {
             System.out.print(item + " ");
         }
     }
